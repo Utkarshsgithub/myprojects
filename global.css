@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* WEBSITE STYLING */
+
+.container {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  border: 2px solid #000;
+  border-radius: 10px;
+  transition: box-shadow .2s ease;
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 0px #000,
+  2px 2px 0px #000,
+  3px 3px 0px #000,
+  4px 4px 0px #000,
+  5px 5px 0px #000,
+  6px 6px 0px #000;
+}
+
+.card__content {
+  border-top: 2px solid #000;
+  padding: 25px;
+}
+
+.card__thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc900;
+  padding: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card__thumbnail img {
+  height: 200px;
+}
+
+/* UTILITY CLASSES */
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MEDIA QUERRIES */
+
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+} */
