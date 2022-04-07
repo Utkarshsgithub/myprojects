@@ -24,12 +24,12 @@ a {
 .container {
   padding: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .card {
-  width: 30%;
+  width: 396px;
   border: 2px solid #000;
   border-radius: 10px;
   transition: box-shadow .2s ease;
@@ -51,17 +51,9 @@ a {
 }
 
 .card__thumbnail {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffc900;
-  padding: 25px;
+  height: 245px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
-
-.card__thumbnail img {
-  height: 200px;
 }
 
 /* UTILITY CLASSES */
@@ -74,8 +66,14 @@ a {
 
 /* MEDIA QUERRIES */
 
-/* @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+@media only screen and (max-width: 450px) {
+  .container {
+    padding: 50px;
   }
-} */
+  .card {
+    width: 300px;
+  }
+  .card__thumbnail {
+    height: 185.5px;
+  }
+}
